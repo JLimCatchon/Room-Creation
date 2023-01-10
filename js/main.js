@@ -178,7 +178,7 @@ const lampHead = new THREE.Mesh(lampHeadGeometry,lampHeadMaterial);
 scene.add(lampHead);
 
 const lampStandGeometry = new THREE.CylinderGeometry(1,1,4,5);
-const lampStandMaterial = new THREE.MeshBasicMaterial({color: 'rgb(218,208,176)'});
+const lampStandMaterial = new THREE.MeshBasicMaterial({color: 'rgb(99,115,176)'});
 const lampStand = new THREE.Mesh(lampStandGeometry,lampStandMaterial);
 
 
