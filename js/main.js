@@ -286,7 +286,7 @@ function animate() {
 
     //mat
     mat.position.x = 1;
-    mat.position.y = -10;
+    mat.position.y = -9.5;
     mat.position.z = -40;
 
     //bed
