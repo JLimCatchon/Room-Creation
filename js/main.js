@@ -170,6 +170,19 @@ const bigWindowInnerGeometry = new THREE.BoxGeometry(1,9,4);
 const bigWindowInnerMaterial = new THREE.MeshBasicMaterial({color: 'rgb(129,247,241)'});
 const bigWindowInner = new THREE.Mesh(bigWindowInnerGeometry,bigWindowInnerMaterial);
 scene.add(bigWindowInner);
+
+//lamp
+const lampHeadGeometry = new THREE.CylinderGeometry(1,2,2,8);
+const lampHeadMaterial = new THREE.MeshBasicMaterial({color: 'rgb(158,155,148)'});
+const lampHead = new THREE.Mesh(lampHeadGeometry,lampHeadMaterial);
+scene.add(lampHead);
+
+const lampStandGeometry = new THREE.CylinderGeometry(1,1,4,5);
+const lampStandMaterial = new THREE.MeshBasicMaterial({color: 'rgb(218,208,176)'});
+const lampStand = new THREE.Mesh(lampStandGeometry,lampStandMaterial);
+
+
+scene.add(lampStand);
 ///Insert Code here
 
 
@@ -326,6 +339,15 @@ function animate() {
     bigWindowInner.position.x =13;
     bigWindowInner.position.y = 0;
     bigWindowInner.position.z =-30.8;
+
+    //lamp
+    lampHead.position.x=-9.2;
+    lampHead.position.y=0;
+    lampHead.position.z=-35.2;
+
+    lampStand.position.x=-9;
+    lampStand.position.y=-2.3;
+    lampStand.position.z=-35;
     renderer.render( scene, camera );
 }
 
