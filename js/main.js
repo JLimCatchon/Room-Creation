@@ -5,10 +5,10 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild( renderer.domElement );
 
-
 camera.position.y = 0; //0
 camera.position.z = -25; //-30
 camera.position.x = 5; // 5
+
 ///walls
 const bottomWallGeometry = new THREE.BoxGeometry( 30, 1, 15 );
 const bottomWallMaterial = new THREE.MeshBasicMaterial( { color: 'rgb(250,217,194)'} );
@@ -65,7 +65,6 @@ const mirrorMaterial = new THREE.MeshBasicMaterial({color:'rgb(229,240,238)'});
 const mirror = new THREE.Mesh(mirrorGeometry,mirrorMaterial);
 scene.add(mirror);
 
-
 const mirrorBorderGeometry = new THREE.BoxGeometry(1,10,1);
 const mirrorBorderMaterial = new THREE.MeshBasicMaterial({color: 'rgb(181,124,91)'})
 const mirrorBorder = new THREE.Mesh(mirrorBorderGeometry,mirrorBorderMaterial);
@@ -81,7 +80,6 @@ scene.add(mirrorBorderTop);
 
 const mirrorBorderBottom = new THREE.Mesh(mirrorBorderTopGeometry,mirrorBorderTopMaterial);
 scene.add(mirrorBorderBottom);
-
 
 const mirrorHolderGeometry = new THREE.CylinderGeometry(0.87,0,1,3);
 const mirrorHolderMaterial = new THREE.MeshBasicMaterial({color: 'rgb(181,124,91)'});
@@ -131,7 +129,6 @@ const bedWallMaterial = new THREE.MeshBasicMaterial({color: 'rgb(203,142,0)'});
 const bedWall = new THREE.Mesh(bedWallGeometry,bedWallMaterial);
 scene.add(bedWall);
 
-
 //pillow
 const pillowGeometry = new THREE.CylinderGeometry(2,2,10);
 const pillowMaterial = new THREE.MeshBasicMaterial({color: 'rgb(229,228,226)'});
@@ -180,8 +177,6 @@ scene.add(lampHead);
 const lampStandGeometry = new THREE.CylinderGeometry(1,1,4,5);
 const lampStandMaterial = new THREE.MeshBasicMaterial({color: 'rgb(99,115,176)'});
 const lampStand = new THREE.Mesh(lampStandGeometry,lampStandMaterial);
-
-
 scene.add(lampStand);
 ///Insert Code here
 
@@ -193,19 +188,15 @@ function animate() {
     bottomWall.position.y = -10;
     bottomWall.position.z = -38;
 
-   
     rightWall.position.x = 15;
     rightWall.position.y = 0;
     rightWall.position.z = -45;
     
-    
-
     leftWall.position.x = -15;
     leftWall.position.y = 0;
     leftWall.position.z = -35;
     leftWall.rotation.y = 245;
    
-    
     backWall.position.x = 0;
     backWall.position.y = 0;
     backWall.position.z = -45;
@@ -214,7 +205,6 @@ function animate() {
     topWall.position.y = 12;
     topWall.position.z = -45;
     topWall.rotation.x = 1.6;
-
 
   //window
     windowBorderLeft.position.x = 5;
@@ -229,12 +219,10 @@ function animate() {
     windowBorderTop.position.y = -2;
     windowBorderTop.position.z = -45;
 
-    
     windowBorderBottom.position.x = 8;
     windowBorderBottom.position.y = 2;
     windowBorderBottom.position.z = -45;
 
- 
     windowMiddle.position.x = 7;
     windowMiddle.position.y = 0;
     windowMiddle.position.z = -45;
@@ -311,7 +299,6 @@ function animate() {
     pillow.rotation.y = 6.3;
     pillow.rotation.z = 4.6;
  
-
     //table
     table.position.x= -10;
     table.position.y= -5;
