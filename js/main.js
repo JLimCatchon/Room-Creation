@@ -212,7 +212,7 @@ function animate() {
     
     topWall.position.x = 2.5;
     topWall.position.y = 12;
-    topWall.position.z =-45;
+    topWall.position.z = -45;
     topWall.rotation.x = 1.6;
 
 
@@ -250,18 +250,18 @@ function animate() {
     
     mirrorBorderRight.position.x = -2;
     mirrorBorderRight.position.y = -2;
-    mirrorBorderRight.position.z= -45.5;
+    mirrorBorderRight.position.z = -45.5;
 
     mirrorBorderTop.position.x = -4.5;
     mirrorBorderTop.position.y = 3;
-    mirrorBorderTop.position.z= -45.5;
+    mirrorBorderTop.position.z = -45.5;
 
     mirrorBorderBottom.position.x = -4.5;
     mirrorBorderBottom.position.y = -6.5;
     mirrorBorderBottom.position.z=-45.5;
 
-    mirrorHolder.position.x= -4.5;
-    mirrorHolder.position.y= 5;
+    mirrorHolder.position.x = -4.5;
+    mirrorHolder.position.y = 5;
     mirrorHolder.position.z = -45.5;
 
     mirrorHolderLine.position.x = -4.4;
@@ -279,9 +279,9 @@ function animate() {
     drawerHandle.position.y = -2;
     drawerHandle.position.z = -40;
 
-    drawerLine.position.x   =-8.5;
-    drawerLine.position.y   =-2;
-    drawerLine.position.z   =-40;
+    drawerLine.position.x  = -8.5;
+    drawerLine.position.y  = -2;
+    drawerLine.position.z  = -40;
 
 
     //mat
@@ -296,30 +296,30 @@ function animate() {
 
     bedHolder.position.x = 8;
     bedHolder.position.y = -9;
-    bedHolder.position.z =-40;
+    bedHolder.position.z = -40;
 
-    bedWall.position.x =8;
-    bedWall.position.y=-5;
-    bedWall.position.z =-40;
+    bedWall.position.x = 8;
+    bedWall.position.y = -5;
+    bedWall.position.z = -40;
 
     //pillow
     pillow.position.x= 7;
-    pillow.position.y=-5;
-    pillow.position.z=-40;
+    pillow.position.y= -5;
+    pillow.position.z= -40;
   
     pillow.rotation.x = 7.4;
     pillow.rotation.y = 6.3;
     pillow.rotation.z = 4.6;
-    //pillow.scale.set(100,100,100);
+ 
 
     //table
-    table.position.x=-10;
-    table.position.y=-5;
-    table.position.z=-33;
+    table.position.x= -10;
+    table.position.y= -5;
+    table.position.z= -33;
     
-    tableStand.position.x=-10.1;
-    tableStand.position.y=-7.1;
-    tableStand.position.z=-36;
+    tableStand.position.x= -10.1;
+    tableStand.position.y= -7.1;
+    tableStand.position.z= -36;
 
     //chair
     chair.position.x = -4;
@@ -329,25 +329,25 @@ function animate() {
     //light
     light.position.x = 1;
     light.position.y = 12;
-    light.position.z =-40;
+    light.position.z = -40;
 
     //big window
     bigWindow.position.x = 13.5;
     bigWindow.position.y = 0;
-    bigWindow.position.z =-31;
+    bigWindow.position.z = -31;
 
-    bigWindowInner.position.x =13;
+    bigWindowInner.position.x = 13;
     bigWindowInner.position.y = 0;
-    bigWindowInner.position.z =-30.8;
+    bigWindowInner.position.z = -30.8;
 
     //lamp
-    lampHead.position.x=-9.2;
-    lampHead.position.y=0;
-    lampHead.position.z=-35.2;
+    lampHead.position.x= -9.2;
+    lampHead.position.y= 0;
+    lampHead.position.z= -35.2;
 
-    lampStand.position.x=-9;
-    lampStand.position.y=-2.3;
-    lampStand.position.z=-35;
+    lampStand.position.x= -9;
+    lampStand.position.y= -2.3;
+    lampStand.position.z= -35;
     renderer.render( scene, camera );
 }
 
